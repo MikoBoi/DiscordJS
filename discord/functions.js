@@ -11,15 +11,15 @@ function typeMessage(event){
 
     const tmstmp = Date.now();
     const date = new Date(tmstmp);
-    var formattedTime = date.getDate() + '.' + 
+    var formattedTime = (date.getDate() < 10 ? '0' : '') + date.getDate() + '.' + 
                         "0" + (date.getMonth()+1) + '.' + 
                         date.getFullYear() + ' ' + 
                         date.getHours() + ":" + 
                         (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
 
 
-    
-    document.getElementById("chat").innerHTML +=
+
+    var message =
     `
         <div class="flex items-center p-1 pl-5 my-5 mr-2 hover:bg-[#32353B] group">
             <img src="https://rb.gy/jfrzf7" alt="" class="h-10 rounded-full cursor-pointer mr-3 hover:shadow-2xl" />
@@ -37,6 +37,10 @@ function typeMessage(event){
         </div>
     `;
 
+    document.getElementById("chat").innerHTML += message;
+
+    cagesObj[document.getElementById("title").innerHTML] += message;
+
     document.getElementById('text_id').value = "";
 }
 
@@ -49,7 +53,8 @@ function getCurDateTime(){
                         date.getHours() + ":" + 
                         (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
 
-    document.getElementById("currentDateTime").innerHTML = formattedTime;
+    // document.getElementById("currentDateTime").innerHTML = formattedTime;
+    return formattedTime;
 }
 
 function dropDown(id){
@@ -108,6 +113,7 @@ function activeCage(){
         this.id = "welcome";
         document.getElementById(this.id).classList.add("bg-[#3A3C43]", "text-white")
         document.getElementById("title").innerHTML = this.id;
+        document.getElementById("chat").innerHTML = cagesObj[this.id];
         return
     }
 
@@ -129,17 +135,40 @@ function activeCage(){
             }
         }
     }
+
+    // console.log(cagesObj[this.id]);
+
+    document.getElementById("chat").innerHTML = cagesObj[this.id];
 }
 
-// function createChat(){
-//     var cages = document.getElementsByClassName("cages");
-//     for(i = 0; i < cages.length; i++){
-//         console.log(cages[i].id);
-//         var element = document.createElement('div');
-//         element.id = cages[i].id + "Chat";
-        
-//     }
-// }
+function createChat(){
+    var curDateTime = getCurDateTime();
+    var cages = document.getElementsByClassName("cages");
+    window.cagesObj = {};
+    for(i = 0; i < cages.length; i++){
+        // console.log(cages[i].id);
+        // var element = document.createElement('div');
+        // element.id = cages[i].id + "Chat";
+        cagesObj[cages[i].id] = 
+        `
+            <div class="flex items-center p-1 pl-5 my-5 mr-2 hover:bg-[#32353B] group">
+                <img src="https://rb.gy/oubw0z" alt="" class="h-10 rounded-full cursor-pointer mr-3 hover:shadow-2xl" />
+                <div class="flex flex-col">
+                    <h4 class="flex items-center space-x-2 font-medium">
+                        <span class="hover:underline text-white text-sm cursor-pointer">
+                        DiscordBOT
+                        </span>
+                        <span id="currentDateTime" class="text-[#72767d] text-xs">
+                        `+ curDateTime +`
+                        </span>
+                    </h4>
+                    <p class="text-sm text-[#dcddde]">#`+ cages[i].id +` chat</p>
+                </div>
+            </div>
+        `;
+    }
+    // console.log(cagesObj);
+}
 
 var cages = document.getElementsByClassName("cages");
 for(i = 0; i < cages.length; i++){
@@ -147,6 +176,7 @@ for(i = 0; i < cages.length; i++){
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+    createChat();
     activeCage();
-    getCurDateTime();
+    // getCurDateTime();
 });
