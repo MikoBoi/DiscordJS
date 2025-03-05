@@ -740,12 +740,21 @@ video {
   border-radius: 0.5rem;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border {
   border-width: 1px;
 }
 
 .border-b {
   border-bottom-width: 1px;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .border-gray-700 {
@@ -761,6 +770,11 @@ video {
 .bg-\[\#202225\] {
   --tw-bg-opacity: 1;
   background-color: rgb(32 34 37 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#3A3C43\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(58 60 67 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#2f3136\] {
@@ -785,11 +799,6 @@ video {
 
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-\[\#3A3C43\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(58 60 67 / var(--tw-bg-opacity));
 }
 
 .p-3 {
@@ -853,11 +862,6 @@ video {
 
 .font-medium {
   font-weight: 500;
-}
-
-.text-discord_green {
-  --tw-text-opacity: 1;
-  color: rgb(59 165 92 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -963,11 +967,6 @@ video {
 .hover\:bg-discord_purple:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(88 101 242 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-discord_green:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 165 92 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-\[\#34373C\]:hover {

@@ -4,37 +4,40 @@
     <link href="style.css" rel="stylesheet">
 
     <div class="flex h-screen select-none">
-        <div class="flex flex-col space-y-3 bg-[#202225] p-3 min-w-max">
+        <div id="leftBar" class="flex flex-col space-y-3 bg-[#202225] p-3 min-w-max">
             <div class="server hover:bg-discord_purple active:rounded-3xl">
                 <img src="https://rb.gy/kuaslg" alt="" class="h-5" />
             </div>
             <hr class=" border-gray-700 border w-8 mx-auto" />
-            <img src="https://rb.gy/ccrkxv" alt="" class="h-12 cursor-pointer rounded-full transition-all duration-100 ease-out hover:rounded-2xl active:rounded-3xl" />
-            <img src="https://rb.gy/8vzvgp" alt="" class="h-12 cursor-pointer rounded-full transition-all duration-100 ease-out hover:rounded-2xl active:rounded-3xl" />
-            <img src="https://rb.gy/kdeapd" alt="" class="h-12 cursor-pointer rounded-full transition-all duration-100 ease-out hover:rounded-2xl active:rounded-3xl" />
+            
+                <!--             
+                            <img src="https://rb.gy/ccrkxv" alt="" class="h-12 cursor-pointer rounded-full transition-all duration-100 ease-out hover:rounded-2xl active:rounded-3xl" />
+                            <img src="https://rb.gy/8vzvgp" alt="" class="h-12 cursor-pointer rounded-full transition-all duration-100 ease-out hover:rounded-2xl active:rounded-3xl" />
+                            <img src="https://rb.gy/kdeapd" alt="" class="h-12 cursor-pointer rounded-full transition-all duration-100 ease-out hover:rounded-2xl active:rounded-3xl" />
+                -->
 
-            <div class="server hover:bg-discord_green group active:rounded-3xl">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-discord_green h-7 group-hover:text-white">
+            <div class="server hover:bg-discord_purple group active:rounded-3xl">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-white h-7 group-hover:text-white">
                     <path fill-rule="evenodd" d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z" clip-rule="evenodd" />
                 </svg>
             </div>
-            <div class="server hover:bg-discord_green group active:rounded-3xl">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-discord_green h-7 group-hover:text-white">
+            <div class="server hover:bg-discord_purple group active:rounded-3xl">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-white h-7 group-hover:text-white">
                     <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
                 </svg>
             </div>
         </div>
         <div class="bg-[#2f3136] flex flex-col min-w-max">
-            <h2 class="flex text-white font-bold text-sm items-center justify-between border-b border-gray-800 p-4 hover:bg-[#34373C] cursor-pointer">
+            <h2 id="serverTitle" class="flex text-white font-bold text-sm items-center justify-between border-b border-gray-800 p-4 hover:bg-[#34373C] cursor-pointer">
                 Какой-то сервер.
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 ml-2">
                     <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
                 </svg>
             </h2>
             
-            <div class="text-[#8e9297] flex-grow overflow-y-scroll scrollbar-hide">
+            <div id="chatsDiv" class="text-[#8e9297] flex-grow overflow-y-scroll scrollbar-hide">
 
-                <div id="1">
+                <!-- <div id="1">
                     <div onclick="dropDown('1')" class="flex items-center p-2 hover:text-white cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3  mr-2">
                             <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
@@ -143,7 +146,7 @@
                             chillrooms
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         
             <div class="bg-[#292b2f] p-2 flex justify-between items-center space-x-8">

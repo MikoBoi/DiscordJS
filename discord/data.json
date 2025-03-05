@@ -1,0 +1,202 @@
+{
+    "data": [
+        {
+            "type": "server",
+            "name": "MinecraftWorld",
+            "logo_link": "https://rb.gy/kdeapd",
+            "channels": [
+                {
+                    "name": "DOORBELL",
+                    "chats": [
+                        {
+                            "title": "welcome"
+                        },
+                        {
+                            "title": "channels"
+                        },
+                        {
+                            "title": "roles"
+                        }
+                    ]
+                },
+                {
+                    "name": "INFO",
+                    "chats": [
+                        {
+                            "title": "rules"
+                        },
+                        {
+                            "title": "hello-goodbye"
+                        },
+                        {
+                            "title": "news"
+                        },
+                        {
+                            "title": "events"
+                        },
+                        {
+                            "title": "feedback"
+                        }
+                    ]
+                },
+                {
+                    "name": "RELAX",
+                    "chats": [
+                        {
+                            "title": "global-chat"
+                        },
+                        {
+                            "title": "offers"
+                        },
+                        {
+                            "title": "music"
+                        },
+                        {
+                            "title": "memes"
+                        },
+                        {
+                            "title": "chillrooms"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "type": "server",
+            "name": "ChillRooms",
+            "logo_link": "https://rb.gy/8vzvgp",
+            "channels": [
+                {
+                    "name": "ENTRY",
+                    "chats": [
+                        {
+                            "title": "welcome"
+                        },
+                        {
+                            "title": "rules"
+                        },
+                        {
+                            "title": "bye"
+                        }
+                    ]
+                },
+                {
+                    "name": "IMPORTANT",
+                    "chats": [
+                        {
+                            "title": "announcement"
+                        },
+                        {
+                            "title": "nsfw-access"
+                        },
+                        {
+                            "title": "giveaway"
+                        },
+                        {
+                            "title": "selfroles"
+                        }
+                    ]
+                },
+                {
+                    "name": "UPDATES",
+                    "chats": [
+                        {
+                            "title": "social-media"
+                        },
+                        {
+                            "title": "events"
+                        },
+                        {
+                            "title": "boosts"
+                        }
+                    ]
+                },
+                {
+                    "name": "COMMUNITY",
+                    "chats": [
+                        {
+                            "title": "general-chat"
+                        },
+                        {
+                            "title": "invites"
+                        },
+                        {
+                            "title": "nsfw"
+                        },
+                        {
+                            "title": "suggest"
+                        }
+                    ]
+                },
+                {
+                    "name": "MISC",
+                    "chats": [
+                        {
+                            "title": "media"
+                        },
+                        {
+                            "title": "memes"
+                        },
+                        {
+                            "title": "level"
+                        },
+                        {
+                            "title": "commands"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "type": "server",
+            "name": "WhatDoesTheFoxSay",
+            "logo_link": "https://rb.gy/ccrkxv",
+            "channels": [
+                {
+                    "name": "General INFO",
+                    "chats": [
+                        {
+                            "title": "welcome"
+                        }
+                    ]
+                },
+                {
+                    "name": "Devs",
+                    "chats": [
+                        {
+                            "title": "maps"
+                        },
+                        {
+                            "title": "models"
+                        },
+                        {
+                            "title": "rip"
+                        },
+                        {
+                            "title": "demo-maps"
+                        }
+                    ]
+                },
+                {
+                    "name": "Chat",
+                    "chats": [
+                        {
+                            "title": "ru"
+                        },
+                        {
+                            "title": "eng"
+                        },
+                        {
+                            "title": "off-top"
+                        },
+                        {
+                            "title": "screenshots"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
