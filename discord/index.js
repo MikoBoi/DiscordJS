@@ -11,7 +11,8 @@ function createWindow() {
         icon: __dirname + '/app.ico',
     });
 
-    win.loadURL(`file://${__dirname}/index.html`);
+    // win.loadURL(`file://${__dirname}/index.html`);
+    win.loadURL(`file://${__dirname}/auth.html`);
 
     // win.webContents.openDevTools();
 

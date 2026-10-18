@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <link href="style.css" rel="stylesheet"> -->
+
+    <div class="flex h-screen select-none bg-[#202225] items-center justify-center">
+        <div class="flex flex-col w-96 h-auto bg-gray-700 items-center p-8 rounded-xs">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="text-white text-xl font-bold text-center">Welcome back!</h1>
+                <p class="text-gray-400 text-sm text-center">We're so excited to see you again!</p>
+            </div>
+
+            <form onsubmit="auth(event)" id="loginForm" class="flex flex-col gap-2 mt-4 w-full">
+                <div id="emailLabel" class="flex flex-row gap-1 items-center">
+                    <p class="text-gray-300 text-sm font-bold">EMAIL</p>
+                    <p class="text-red-300 text-sm font-bold">*</p>
+                </div>
+
+                <input
+                    id="email"
+                    type="text"
+                    class="w-full h-10 bg-gray-600 text-white px-2 rounded-sm"
+                    required
+                >
+
+                <div id="passwordLabel" class="flex flex-row gap-1 items-center">
+                    <p class="text-gray-300 text-sm font-bold">PASSWORD</p>
+                    <p class="text-red-300 text-sm font-bold">*</p>
+                </div>
+
+                <input
+                    id="password"
+                    type="password"
+                    class="w-full h-10 bg-gray-600 text-white px-2 rounded-sm"
+                    required
+                >
+
+                <a href="#" class="text-blue-400 text-xs font-medium hover:underline">
+                    Forgot your password?
+                </a>
+
+                <button class="w-full h-10 bg-[#5865f2] text-white font-bold rounded-xs mt-4 hover:bg-[#5874f9]">
+                    Log In
+                </button>
+
+                <div class="flex flex-row gap-1 text-xs">
+                    <p class="text-gray-400">Need an account?</p>
+                    <a href="#" class="text-blue-400 font-medium hover:underline">Register</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="auth.js"></script>
+    
+</html>
